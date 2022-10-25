@@ -1,0 +1,128 @@
+﻿/*reset style*/
+body{
+    margin:0;
+    min-height: 100vh;
+}
+/*global styles*/
+.container{
+    width:1200px;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+/*header styles*/
+header{
+    height:70px;
+    background-color: cornflowerblue;
+    align-items: center;
+}
+header .logo{
+    width:45px;
+    height:45px;
+    
+}
+header .container{
+    align-items:center;
+}
+
+nav {
+    width:calc(100% - 45px);
+    justify-content:space-between
+}
+
+
+nav a{
+    color:rgb(253, 253, 253);
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: cornsilk;
+}
+
+footer p{
+    padding: 15px 0;
+    margin-bottom: 0;
+    height: 60px;
+    box-sizing: border-box;
+}
+/*auth*/
+.auth-form-container{
+    width:300px;
+    min-height:200px;
+    border:1px solid #ccc;
+    margin:auto;
+    padding: 15px;
+    box-sizing: border-box;/*am shemtxvevashi 300 pixsels ar gascdeba da shida mxridan chamoakldeba*/
+}
+.auth-form-container .text-input-label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.auth-form-container .text-input,
+.auth-form-container .locations {
+    height: 30px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+}
+.auth-form-container .locations{
+    background-color: white;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+
+.w-100{
+    width:100%;
+}
+.btn{
+    display:block;
+    font-size:16px;
+    height:35px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: rgb(77,77,179);
+    color: white;
+}
+
+.btn-link{
+    text-decoration: none;
+    line-height: 35px;
+    color: blue;
+}
+
+.btn-link:hover{
+    text-decoration: underline;
+}
+
+
+
+.sex-container{
+    display:inline-block;
+}
+
+.body-container{
+    padding:30px 0;
+    min-height: calc(100vh - 70px - 60px);
+    box-sizing:border-box;
+}
