@@ -1,0 +1,19 @@
+table{
+   
+    width:100%;
+    border-collapse: collapse;
+}
+th,tr,td{
+    border: 2px solid green;
+   
+}
+th{
+    text-align: start;
+   
+}
+table tr:nth-child(even){
+    background-color: fuchsia;
+}
+tr{
+    padding: 5px 10px;
+}
