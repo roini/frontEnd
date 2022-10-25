@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="styles/style.css">
+   
+</head>
+<body>
+	<header class="container d-flex">
+		<a href="#">
+                <img class="logo" src="./assets/img/logo.svg" alt="საიტის ლოგო">
+            </a>
+		
+		<nav class="d-flex">
+		<div>
+			<a href="#">მთავარი</a>
+			<a href="#">დახმარება</a>
+			<a href="#">ბლოგი</a>
+			<a href="#">წესები</a>
+		</div>
+	    <div>
+			<a href="./auth.html">შესვლა</a>
+			<a href="./registration.html">რეგისტრაცია</a>
+		</div>
+		</nav>
+	</header>
+    <div class="container body-container">
+        <div class="auth-form-container">
+            <form action="" method="get">
+                <div class="form-group">
+                    <label class="text-input-label" for="firstName">სახელი</label>
+                    <input class="text-input" type="text" name="firstName" id="firstName" placeholder="შეიყვანეთ მომხმარებლის სახელი">
+                </div>
+                <div class="form-group">
+                    <label class="text-input-label" for="lastName">გვარი</label>
+                    <input class="text-input" type="text" name="lastName" id="lastName" placeholder="შეიყვანეთ მომხმარებლის გვარი">
+                </div>
+                <div class="form-group">
+                    <label class="text-input-label" for="userEmail">მოხმარებლის ელ-ფოსტა</label>
+                    <input class="text-input" type="text" name="userEmail" id="userEmail" placeholder="შეიყვანეთ თქვენი ელ-ფოსტა">
+                </div>
+                <div class="form-group">
+                    <label class="text-input-label" for="birthDate">დაბადების თარიღი</label>
+                    <input class="text-input" type="date" name="birthDate" id="birthDate">
+                </div>
+                <div class="form-group">
+                    <label class="text-input-label" for="lastName">დაბადების ადგილი</label>
+                    <select class="locations">
+                        <option>საქართველო</option>
+                        <option>საბერძნეთი</option>
+                        <option>აშშ</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="sex-container">
+                        <input type="radio" name="male" id="male">
+                        <label for="male">კაცი</label>
+                    </div>
+                    <div class="sex-container">
+                        <input type="radio" name="female" id="female">
+                        <label for="female">ქალი</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="text-input-label" for="pass">პაროლი</label>
+                    <input class="text-input" type="password" name="pass" id="pass" placeholder="შეიყვანეთ მომხმარებლის პაროლი">
+                </div>
+                <div class="form-group">
+                    <label class="text-input-label" for="passReplay">გაიმეორე პაროლი</label>
+                    <input class="text-input" type="password" name="passReplay" id="passReplay" placeholder="შეიყვანეთ მომხმარებლის პაროლი">
+                </div>
+              
+                <button class="btn btn-primary w-100 mb-15">რეგისტრაცია</button>
+                <a class="btn btn-link" href="./auth.html">ავტორიზაცია</a>
+            </form>
+        </div>
+    </div>
+	<footer>
+		<div class="container">
+			<p>ლორემ იპსუმ თუთუნით წაიღებდა დააბეჭდვინა გაითავისეს, შევწირავ ცდებოდნენ აბაზი ძალუძდა გამოწვეულ, წითელში, გიჩვენებდით ჩაწვდა.იძინებდნენ</p>
+		</div>
+	</footer>
+</body>
+</html>
