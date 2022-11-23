@@ -1,0 +1,193 @@
+﻿@import url('./fonts.css');
+@import url('./color.css');
+
+/*reset style*/
+*{
+    font-family: 'Noto Sans Georgian','sans serif';
+    
+}
+body{
+    margin:0;
+    min-height: 100vh;
+}
+/*global styles*/
+.container{
+    width:1024px;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+/*header styles*/
+header{
+    height:70px;
+    background-color: cornflowerblue;
+    align-items: center;
+}
+header .logo{
+    width:45px;
+    height:45px;
+    
+}
+header .container{
+    align-items:center;
+}
+
+nav {
+    width:calc(100% - 45px);
+    justify-content:space-between
+}
+
+
+nav a{
+    color:rgb(253, 253, 253);
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: cornsilk;
+}
+
+footer p{
+    padding: 15px 0;
+    margin-bottom: 0;
+    height: 60px;
+    box-sizing: border-box;
+}
+/*auth*/
+.auth-form-container{
+    width:300px;
+    min-height:200px;
+    border:1px solid #ccc;
+    margin:auto;
+    padding: 15px;
+    box-sizing: border-box;/*am shemtxvevashi 300 pixsels ar gascdeba da shida mxridan chamoakldeba*/
+}
+.auth-form-container .text-input-label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.auth-form-container .text-input,
+.auth-form-container .locations {
+    height: 30px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+}
+.auth-form-container .locations{
+    background-color: white;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+
+.w-100{
+    width:100%;
+}
+.btn{
+    display:block;
+    font-size:16px;
+    height:35px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color:var(--blue);
+    color: white;
+}
+
+.btn-link{
+    text-decoration: none;
+    line-height: 35px;
+    color: blue;
+}
+
+.btn-link:hover{
+    text-decoration: underline;
+}
+
+
+
+.sex-container{
+    display:inline-block;
+}
+
+.body-container{
+    padding:30px 0;
+    min-height: calc(100vh - 70px - 60px);
+    box-sizing:border-box;
+}
+/*blog-list-page-styles*/
+.blog-main-container{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap:15px;
+}
+.main-category-item{
+	border:1px solid rgb(235,235,235);
+	flex-grow:1;/*tanabrad ganawildeba*/
+	text-align:center;
+	padding:15px 20px;
+
+	text-decoration:none;
+	color:black;
+}
+.main-category-item:first-child{
+	margin-left:0;/*pirveli elementis gaswpreba*/
+	
+}
+.main-category-item:hover{
+	border-color:rgb(200,200,200);
+	background-color:rgb(233,233,233)
+}
+.main-category-item:last-child{
+	margin-right:0;
+	
+}
+.main-category-item img{
+	width:45px;
+	height:45px;
+}
+
+.category-navigation-list{
+	border:1px solid rgb(235,235,235);
+	flex-basis: 20%;
+	margin:0;
+	padding:25px 0 25px 40px;
+	list-style:none;
+}
+
+.category-navigation-list a{
+	padding: 5px 0;
+	text-decoration:none;
+	color:rgb(80,80,80);
+}
+
+.category-navigation-list a:hover{
+	text-decoration:underline;
+	color:blue;
+}
+
+.blog-container{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 15px;
+    grid-column:2/ span 3;
+}
+
